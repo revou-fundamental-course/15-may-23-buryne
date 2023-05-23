@@ -1,0 +1,189 @@
+:root {
+  --bg-header: rgb(52, 152, 219);
+  --color-header: rgb(212, 213, 213);
+  --bg-persegi: rgb(51, 121, 183);
+  --bg-luas-persegi: rgb(40, 128, 185);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+header {
+  background: var(--bg-header);
+  text-align: center;
+  padding: 20px 20px;
+
+  .title {
+    font-weight: bold;
+    color: white;
+  }
+
+  .subtitle {
+    color: var(--color-header);
+    font-size: 16px;
+  }
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 30px 0;
+
+  .welcome-child-banner {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: rgb(51, 121, 183);
+    color: white;
+  }
+  .welcome-child {
+    color: rgb(60, 58, 58);
+  }
+}
+
+/* Card  */
+.card {
+  background: white;
+  border: 1px solid rgb(40, 128, 185);
+  margin: 30px 0;
+
+  .card-heading {
+    background: var(--bg-persegi);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    padding: 35px;
+
+    .square {
+      position: relative;
+      border: 1px solid red;
+      height: 150px;
+      width: 150px;
+
+      & .square-a {
+        position: absolute;
+        top: -10%;
+        left: -15%;
+      }
+
+      & .square-b {
+        position: absolute;
+        top: -10%;
+        right: -15%;
+      }
+
+      & .square-c {
+        position: absolute;
+        bottom: -10%;
+        left: -15%;
+      }
+
+      & .square-d {
+        position: absolute;
+        bottom: -10%;
+        right: -15%;
+      }
+    }
+  }
+
+  .formula-description {
+    padding: 0 10px;
+
+    #formula-rumus {
+      text-align: center;
+    }
+
+    #formula-details {
+      padding: 15px 0;
+      border-bottom: 1px solid rgb(190, 186, 186);
+    }
+  }
+
+  .results-main {
+    padding: 0 10px;
+
+    #prepare-heading {
+      font-size: 24px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .result {
+      margin: 10px 0;
+    }
+
+    .container-btn {
+      margin: 25px 0;
+      text-align: center;
+
+      .btn {
+        padding: 5px 15px;
+        border-radius: 4px;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      .done {
+        background: var(--bg-persegi);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: rgb(54, 100, 141);
+        }
+      }
+      .reset {
+        background: rgb(239, 173, 78);
+      }
+    }
+  }
+}
+
+main {
+  background: white;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 48rem) {
+  main {
+    padding: 0 1.875rem;
+  }
+}
+
+.line {
+  width: 100%;
+  background-color: rgb(138, 138, 138);
+  height: 1px;
+  margin: 40px 0;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+}
+
+footer {
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  color: gray;
+}

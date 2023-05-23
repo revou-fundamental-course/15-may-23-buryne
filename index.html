@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Katik | Kalulator</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Katik <span class="subtitle">Kalulator Matematik</span></h1>
+    </header>
+    <main>
+      <div class="welcome">
+        <h1>Welcome to Katik</h1>
+        <div class="welcome-child">
+          <p>Hai Sobat, Selamat datang di Katik:|</p>
+          <p>
+            Sebuah web apps sederharna berfungsi untuk menghitung nilai luas dan keliling bangun
+            datar.
+          </p>
+        </div>
+        <p class="welcome-child-banner">Persegi</p>
+      </div>
+
+      <!-- Luas -->
+      <div class="card">
+        <div class="card-heading">
+          <h3 id="heading">Luas Persegi</h3>
+        </div>
+        <div class="figure">
+          <div class="square">
+            <p class="square-a">A</p>
+            <p class="square-b">B</p>
+            <p class="square-c">C</p>
+            <p class="square-d">D</p>
+          </div>
+        </div>
+        <div class="formula-description">
+          <p id="formula-rumus-heading">Rumus Luas Persegi yaitu:</p>
+          <p id="formula-rumus">L = S x S</p>
+          <p>dimana:</p>
+          <div id="formula-details">
+            <p id="details-a">L = Luas</p>
+            <p id="details-b">S = Sisi</p>
+          </div>
+        </div>
+        <div class="results-main">
+          <h3 id="prepare-heading">Hitung Luas Persegi</h3>
+          <input
+            class="input-nilai"
+            type="text"
+            name="sisi-luas"
+            placeholder="Nilai Input"
+            required
+            
+          />
+          <div class="result">
+            <p class="result-luas" id="rumus-luas"></p>
+            <p class="result-luas" id="perhitungan-luas"></p>
+            <p class="result-luas" id="luas_output"></p>
+          </div>
+          <div class="container-btn">
+            <button class="btn done" type="submit" name="hitung-luas">Hitung</button>
+            <button class="btn reset" name="reset-luas">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="line"></div> -->
+
+      <!-- Keliling -->
+      <div class="card">
+        <div class="card-heading">
+          <h3 id="heading">Keliling Persegi</h3>
+        </div>
+        <div class="figure">
+          <div class="square">
+            <p class="square-a">A</p>
+            <p class="square-b">B</p>
+            <p class="square-c">C</p>
+            <p class="square-d">D</p>
+          </div>
+        </div>
+        <div class="formula-description">
+          <p id="formula-rumus-heading">Rumus Keliling Persegi yaitu:</p>
+          <p id="formula-rumus">K = 4 x S</p>
+          <p>dimana:</p>
+          <div id="formula-details">
+            <p id="details-a">K = Keliling</p>
+            <p id="details-b">S = Sisi</p>
+          </div>
+        </div>
+        <div class="results-main">
+          <h3 id="prepare-heading">Hitung Keliling Persegi</h3>
+          <form>
+            <input
+              class="input-nilai"
+              type="text"
+              name="sisi-keliling"
+              placeholder="Nilai Input"
+              required
+            />
+            <div class="result">
+              <p class="result-keliling" id="rumus-keliling"></p>
+              <p class="result-keliling" id="perhitungan-keliling"></p>
+              <p class="result-keliling" id="keliling_output"></p>
+            </div>
+            <div class="container-btn">
+              <button class="btn done" type="submit" name="hitung-keliling">Hitung</button>
+              <button class="btn reset" name="reset-keliling">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Katik / Rito</p>
+    </footer>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
