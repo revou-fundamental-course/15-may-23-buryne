@@ -169,13 +169,6 @@ main {
   }
 }
 
-.line {
-  width: 100%;
-  background-color: rgb(138, 138, 138);
-  height: 1px;
-  margin: 40px 0;
-}
-
 input {
   width: 100%;
   padding: 5px;
